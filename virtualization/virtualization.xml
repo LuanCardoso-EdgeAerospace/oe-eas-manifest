@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote alias="repo" fetch="https://git.yoctoproject.org/git" name="yocto"/>
+
+  <project name="meta-virtualization" path="layers/meta-virtualization/" remote="yocto" revision="kirkstone"/>
+</manifest>
