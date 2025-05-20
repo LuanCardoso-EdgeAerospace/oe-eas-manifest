@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Base repositoties for yocto, core, bitbake
+-->
+<manifest>
+  <!-- <remote alias="repo" fetch="github.com/" name="hailo"/> -->
+  <remote name="hailo" fetch="ssh://git@github.com/" />
+
+  <project name="LuanCardoso-EdgeAerospace/meta-hailo.git" path="layers/meta-hailo-accelerator/" remote="hailo" revision="accelerator"/>
+  <project name="LuanCardoso-EdgeAerospace/meta-hailo.git" path="layers/meta-hailo-libhailort/" remote="hailo" revision="libhailort"/>
+  <project name="LuanCardoso-EdgeAerospace/meta-hailo.git" path="layers/meta-hailo-tappas/" remote="hailo" revision="tappas"/>
+  <project name="LuanCardoso-EdgeAerospace/meta-hailo.git" path="layers/meta-hailo-vpu/" remote="hailo" revision="vpu"/>
+</manifest>
