@@ -3,11 +3,8 @@
 Base repositoties for yocto, core, bitbake
 -->
 <manifest>
-  <!-- <remote alias="repo" fetch="github.com/" name="hailo"/> -->
   <remote name="hailo" fetch="ssh://git@github.com/" />
-
-  <project name="LuanCardoso-EdgeAerospace/meta-hailo.git" path="layers/meta-hailo-accelerator/" remote="hailo" revision="accelerator"/>
-  <project name="LuanCardoso-EdgeAerospace/meta-hailo.git" path="layers/meta-hailo-libhailort/" remote="hailo" revision="libhailort"/>
-  <project name="LuanCardoso-EdgeAerospace/meta-hailo.git" path="layers/meta-hailo-tappas/" remote="hailo" revision="tappas"/>
-  <project name="LuanCardoso-EdgeAerospace/meta-hailo.git" path="layers/meta-hailo-vpu/" remote="hailo" revision="vpu"/>
+  <!-- There were some modification to the hailo repositories that break compatibility with the image, hence the fixed commit. Changes
+  affect mostly the demo packages, but the distance to upstrem will increase. Consider checking if a current version works-->
+  <project name="hailo-ai/meta-hailo.git" path="layers/meta-hailo/" remote="hailo" revision="3a2665df39d1464e1808b5c95a8ce44994fae8b5"/>
 </manifest>
